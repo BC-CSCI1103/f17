@@ -1,13 +1,10 @@
-# CSCI 1102 Computer Science II
+# CSCI 1103 Computer Science I Honors
 
 ### Fall 2017
 
 ---
 
-# SWITCHED TO CSCI 1103
-
----
-**Meets:** TR 12PM & 1:30PM; Fulton Hall 250
+**Meets:** TR 3PM; Fulton Hall 415
 
 **Instructor:** [Robert Muller](http://www.cs.bc.edu/~muller/)
 
@@ -16,9 +13,7 @@
 **Teaching Assistants:**
 
 + John Abreau: Fulton 160; TBA.
-+ Jacob Bennett: Fulton 160; TBA.
-+ Zeming Lin: Fulton 160; TBA.
-+ Sean McWilliams: Fulton 160; TBA.
++ Ribhi El-Zaru: Fulton 160; TBA.
 
 ---
 
