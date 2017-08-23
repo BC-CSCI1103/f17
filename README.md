@@ -16,10 +16,9 @@
 + Ribhi El-Zaru: Fulton 160; TBA.
 
 
-
 ---
 
-[About](resources/about.md)
+[About](resources/about.md) [Grading](resources/grading.md)
 
 ---
 
