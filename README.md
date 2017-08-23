@@ -12,8 +12,14 @@
 
 **Teaching Assistants:**
 
-+ John Abreau: Fulton 160; TBA.
++ John Abreu: Fulton 160; TBA.
 + Ribhi El-Zaru: Fulton 160; TBA.
+
+
+
+---
+
+[About](resources/about.md)
 
 ---
 
