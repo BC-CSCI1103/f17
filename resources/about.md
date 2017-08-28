@@ -22,7 +22,7 @@ CS1103 consists of two weekly 75 minute lectures and one weekly 60 minute lab. T
 
 **CS1103 Computer Science I Honors, meets TR, 3PM - 4:15PM in Fulton Hall 415.**
 
-###Screens When and Where
+### Screens When and Where
 
 CS1103 will have screen-less classrooms.  **This means that no open laptops, tablets, or smart-phones will be allowed.** All lecture notes and sample programs will be posted to the course website. If you have special circumstances that require you to bring a screen to class, please see me.
 
