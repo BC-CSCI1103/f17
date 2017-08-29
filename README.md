@@ -4,16 +4,20 @@
 
 ---
 
-**Meets:** TR 3PM; Fulton Hall 415
+**Meets:** Tuesdays & Thursdays 3PM - 4:15PM; Fulton Hall 415.
 
 **Instructor:** [Robert Muller](http://www.cs.bc.edu/~muller/)
 
-**Office:** St. Mary's South 277; Mondays 3PM - 4:30PM; Tuesdays 10AM - 11:30AM
+**Office:** St. Mary's South 277; Mondays & Tuesdays 10AM - noon.
 
 **Teaching Assistants:**
 
-+ John Abreu: Fulton 160; TBA.
-+ Yueming Chen: **Fulton** 160; TBA. 
++ John Abreu
+  + **Section**: Higgins 280 Wed 5PM
+  +  **Office Hours** Fulton 160 Mon 7PM - 9PM, Fri 3PM - 5PM.
++ Yueming Chen
+  + **Section**: Higgins 280 Wed 6PM.
+  + **Office Hours** Fulton 160 Sun 5PM - 7PM, Thu 1PM - 3PM.
 
 
 ---
@@ -24,12 +28,12 @@
 
 ---
 
-##Schedule##
+##Schedule
 
 | Mtng |      | Date  | Topic                                    | Notes / Code                   | Psets |
 | :--: | :--: | :---: | :--------------------------------------- | :----------------------------- | :---- |
 |  1   |  T   | 8/29  | Introduction and Overview                | 082917.md                      | 1 Out |
-|  2   |  R   | 8/31  | Base types & basic expressions, simplification; functions & libraries | [012017.md](./notes/012017.md) |       |
+|  2   |  R   | 8/31  | Base types & basic expressions, simplification; functions & libraries | [083117.md](./notes/083117.md) |       |
 |  3   |  T   |  9/5  | let-bound names, products, records & sums |                                |       |
 |  4   |  R   |  9/7  | Matching; function definitions; replacement |                                |       |
 |  5   |  T   | 9/12  | Repetition: lists; append & reverse; work & complexity |                                |       |
