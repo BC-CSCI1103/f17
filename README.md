@@ -14,7 +14,7 @@
 
 + John Abreu
   + **Section**: Higgins 280 Wed 5PM
-  +  **Office Hours** Fulton 160 Mon 7PM - 9PM, Fri 3PM - 5PM.
+  + **Office Hours** Fulton 160 Mon 7PM - 9PM, Fri 3PM - 5PM.
 + Yueming Chen
   + **Section**: Higgins 280 Wed 6PM.
   + **Office Hours** Fulton 160 Sun 5PM - 7PM, Thu 1PM - 3PM.
@@ -22,7 +22,7 @@
 
 ---
 
-[About](resources/about.md) : [Textbooks](resources/textbooks.md) : [Grading](resources/grading.md) : [Canvas](https://bostoncollege.instructure.com/courses/1565034)  : [Piazza](https://piazza.com/class/j6pep61xju0m5) : [Labs](resources/labs.md) 
+[About](resources/about.md) : [Textbooks](resources/textbooks.md) : [Grading](resources/grading.md) : [Canvas](https://bostoncollege.instructure.com/courses/1579254/gradebook)  : [Piazza](https://piazza.com/class/j6pep61xju0m5) : [Labs](resources/labs.md) 
 
 [Manual](http://caml.inria.fr/pub/docs/manual-ocaml/index.html) : [Stdlib](http://caml.inria.fr/pub/docs/manual-ocaml/stdlib.html) : [Pervasives](http://caml.inria.fr/pub/docs/manual-ocaml/libref/Pervasives.html) : [Universe](http://www.is.ocha.ac.jp/~asai/Universe/en/) : [OCaml.org](https://ocaml.org/)
 
