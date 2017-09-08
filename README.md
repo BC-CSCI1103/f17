@@ -33,11 +33,11 @@
 | Mtng |      | Date  | Topic                                    | Notes / Code                   | Psets |
 | :--: | :--: | :---: | :--------------------------------------- | :----------------------------- | :---- |
 |  1   |  T   | 8/29  | Introduction and Overview                | 082917.md                      | 1 Out |
-|  2   |  R   | 8/31  | Base types & basic expressions, simplification; functions & libraries | [083117.md](./notes/083117.md) |       |
-|  3   |  T   |  9/5  | let-bound names, products, records & sums |                                |       |
-|  4   |  R   |  9/7  | Matching; function definitions; replacement |                                |       |
-|  5   |  T   | 9/12  | Repetition: lists; append & reverse; work & complexity |                                |       |
-|  6   |  R   | 9/14  | Repetition: working with lists; zip lists |                                |       |
+|  2   |  R   | 8/31  | Base types & basic expressions, simplification | [083117.md](./notes/083117.md) |       |
+|  3   |  T   |  9/5  | More base types, libraries, stdlib, pervasives, names, top-level let, function definitions |                                |       |
+|  4   |  R   |  9/7  | More on names & function definitions, implicit vs explicit types, let-in, tuples | [090717.ml](./code/090717.ml)  | 2 out |
+|  5   |  T   | 9/12  | Sums & matching, Repetition: lists; append & reverse; work & complexity |                                | 3 out |
+|  6   |  R   | 9/14  | Repetition: working with lists; zip lists, records |                                |       |
 |  7   |  T   | 9/19  | Repetition: working with images          |                                |       |
 |  8   |  R   | 9/21  | Repetition: factoring; primality         |                                |       |
 |  9   |  T   | 9/26  | A bisection algorithm                    |                                |       |
