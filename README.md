@@ -36,7 +36,7 @@
 |  2   |  R   | 8/31  | Base types & basic expressions, simplification | [083117.md](./notes/083117.md) |       |
 |  3   |  T   |  9/5  | More base types, libraries, stdlib, pervasives, names, top-level let, function definitions |                                |       |
 |  4   |  R   |  9/7  | More on names & function definitions, implicit vs explicit types, let-in, tuples | [090717.ml](./code/090717.ml)  | 2 out |
-|  5   |  T   | 9/12  | Sums & matching, Repetition: lists; append & reverse; work & complexity |                                | 3 out |
+|  5   |  T   | 9/12  | Sums & matching, Repetition: lists; append & reverse; work & complexity | [091217.md](./notes/091217.md) | 3 out |
 |  6   |  R   | 9/14  | Repetition: working with lists; zip lists, records |                                |       |
 |  7   |  T   | 9/19  | Repetition: working with images          |                                |       |
 |  8   |  R   | 9/21  | Repetition: factoring; primality         |                                |       |
@@ -62,5 +62,6 @@
 |  27  |  R   | 11/30 | More on modules                          |                                |       |
 |  28  |  T   | 12/5  | New Types in Java                        |                                |       |
 | 429  |  R   | 12/7  | **Last Meeting**                         |                                |       |
+
 
 
