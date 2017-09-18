@@ -24,7 +24,7 @@
 
 [About](resources/about.md) : [Textbooks](resources/textbooks.md) : [Grading](resources/grading.md) : [Canvas](https://bostoncollege.instructure.com/courses/1579254/gradebook)  : [Piazza](https://piazza.com/class/j6pep61xju0m5) : [Labs](resources/labs.md) 
 
-[Manual](http://caml.inria.fr/pub/docs/manual-ocaml/index.html) : [Stdlib](http://caml.inria.fr/pub/docs/manual-ocaml/stdlib.html) : [Pervasives](http://caml.inria.fr/pub/docs/manual-ocaml/libref/Pervasives.html) : [Universe](http://www.is.ocha.ac.jp/~asai/Universe/en/) : [Universe Notes](./resources/universe.md : [OCaml.org](https://ocaml.org/)
+[Manual](http://caml.inria.fr/pub/docs/manual-ocaml/index.html) : [Stdlib](http://caml.inria.fr/pub/docs/manual-ocaml/stdlib.html) : [Pervasives](http://caml.inria.fr/pub/docs/manual-ocaml/libref/Pervasives.html) : [Universe](http://www.is.ocha.ac.jp/~asai/Universe/en/) : [Universe Notes](./resources/universe.md) : [OCaml.org](https://ocaml.org/)
 
 ---
 
