@@ -39,8 +39,8 @@
 |  5   |  T   | 9/12  | Sums & matching, records                 | [091217.md](./notes/091217.md)           |       |
 |  6   |  R   | 9/14  | Repetition: work, working with lists     | [091417.md](./notes/091417.md)           |       |
 |  7   |  T   | 9/19  | Repetition: more work with lists         | [091917.md](./notes/091917.md) [091917.ml](./code/091917.ml) |       |
-|  8   |  R   | 9/21  | Repetition: working with images; factoring; primality |                                          |       |
-|  9   |  T   | 9/26  | A bisection algorithm                    |                                          |       |
+|  8   |  R   | 9/21  | Repetition: more on repetition           | [092117.md](./notes/092117.md)           |       |
+|  9   |  T   | 9/26  | Repetition: factoring; primality; A bisection algorithm |                                          |       |
 |  10  |  R   | 9/28  | **First Exam**; Sorting: insertion sort  |                                          |       |
 |  11  |  T   | 10/3  | Sorting: quicksort & mergesort           |                                          |       |
 |  12  |  R   | 10/5  | Functions are values: map; filter and fold |                                          |       |
