@@ -41,8 +41,8 @@
 |  7   |  T   | 9/19  | Repetition: more work with lists         | [091917.md](./notes/091917.md) [091917.ml](./code/091917.ml) |       |
 |  8   |  R   | 9/21  | Repetition: more on repetition           | [092117.md](./notes/092117.md)           |       |
 |  9   |  T   | 9/26  | Repetition: images, primality            | [092617](./code/092617/)                 |       |
-|  10  |  R   | 9/28  | **First Exam**; Sorting: insertion sort; |                                          |       |
-|  11  |  T   | 10/3  | Sorting: quicksort & mergesort           |                                          |       |
+|  10  |  R   | 9/28  | **First Exam**; Sorting: insertion sort; quicksort | [firstKey.pdf](./resources/firstKey.pdf) |       |
+|  11  |  T   | 10/3  | mergesort; bisection                     |                                          |       |
 |  12  |  R   | 10/5  | Functions are values: map; filter and fold |                                          |       |
 |  13  |  T   | 10/10 | Numeral systems; binary & hex; conversion |                                          |       |
 |  14  |  R   | 10/12 | Positional addition; logic gates; ripple carry |                                          |       |
