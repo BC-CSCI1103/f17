@@ -40,7 +40,7 @@
 |  6   |  R   | 9/14  | Repetition: work, working with lists     | [091417.md](./notes/091417.md)           |       |
 |  7   |  T   | 9/19  | Repetition: more work with lists         | [091917.md](./notes/091917.md) [091917.ml](./code/091917.ml) |       |
 |  8   |  R   | 9/21  | Repetition: more on repetition           | [092117.md](./notes/092117.md)           |       |
-|  9   |  T   | 9/26  | Repetition: images, primality            | [092617](./code/092617/README.md) [code](./code/092617/) |       |
+|  9   |  T   | 9/26  | Repetition: images, primality            | [092617](./code/092617/)                 |       |
 |  10  |  R   | 9/28  | **First Exam**; Sorting: insertion sort; |                                          |       |
 |  11  |  T   | 10/3  | Sorting: quicksort & mergesort           |                                          |       |
 |  12  |  R   | 10/5  | Functions are values: map; filter and fold |                                          |       |
