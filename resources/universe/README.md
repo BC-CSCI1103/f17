@@ -4,7 +4,7 @@
 
 ------
 
-## Notes on the Universe Graphics & Animation Library
+## Notes on the Universe Graphics & Animation Library (DRAFT)
 
 ### Getting Started
 
@@ -14,7 +14,7 @@ This document gives a very brief overview of how the Universe library works. The
 
 ### Color
 
-The Universe library contains a [Color](http://www.is.ocha.ac.jp/~asai/Universe/en/Color.html) module with a large number of pre-defined colors. Colors are combinations of varying levels of *red*, *greeen* and *blue*. In addition, a color may have an alpha value which determines the transparency of a color. An alpha value of 255 is completely opaque. An alpha value of 0 is completely transparent.
+The Universe library contains a [Color](http://www.is.ocha.ac.jp/~asai/Universe/en/Color.html) module with a large number of pre-defined colors. Colors are combinations of varying levels of *red*, *green* and *blue*. In addition, a color may have an alpha value which determines the transparency of a color. An alpha value of 255 is completely opaque. An alpha value of 0 is completely transparent.
 
 The Color module contains one function for making colors and two functions for taking them apart:
 
@@ -108,9 +108,13 @@ let square = Image.rectangle radius radius seeThroughLimeGreen
 let image = Image.place_image square (radius, radius) circle
 ```
 
+### BitMap Images
+
+LATER
+
 ### Animation and the World Module
 
-The [World](http://www.is.ocha.ac.jp/~asai/Universe/en/World.html) module in the Universe library allows one to code interactive graphical applications in OCaml using a variation of the modern [model-view-update](https://guide.elm-lang.org/architecture/) software architecture (aka the [Elm](http://elm-lang.org/) software architecture). The basic idea is that the state of a graphical application is represented or modeled using a single value — in this architecture the value is called a *model*. For a non-trivial application the model will usually be a record structure with many parts. The model-view-update architecture is implemented in a cycle with the model being passed to a *view* function which produces a graphical representation of the model for the user to see. When events such as *clock-ticks*, *touchpad actions* or *keystrokes* occur, the model is threaded through an *update* function which produces a new model reflecting the changed state of the app.
+The [World](http://www.is.ocha.ac.jp/~asai/Universe/en/World.html) module in the Universe library allows one to code interactive graphical applications in OCaml using a variation of the [model-view-update](https://guide.elm-lang.org/architecture/) software architecture (aka the [Elm](http://elm-lang.org/) software architecture). The model-view-update architecture is a modern take on the [model-view-controller](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller) architecture which was used in the heyday of object-oriented programming. The basic idea of model-view-update is that the state of a graphical application is represented or modeled using a single value — in this architecture the value is called a *model*. For a non-trivial application the model will usually be a record structure with many parts. The model-view-update architecture is implemented in a cycle with the model being passed to a *view* function which produces a graphical representation of the model for the user to see. When events such as *clock-ticks*, *touchpad actions* or *keystrokes* occur, the model is threaded through an *update* function which produces a new model reflecting the changed state of the app.
 
 ```
                                       +------------+
@@ -174,13 +178,16 @@ The `World.big_bang` function has one required input and several optional inputs
 It isn't exactly accurate, but the `World.big_bang` function can be understood roughly as:
 
 ```ocaml
-let rec big_bang model ~to_draw:view ~on_tick:update ~stop_when:finished ~to_draw_last:viewLast =
-  let image = view model in
-  let _ = display image      (* Renders the image on the display *)
+let big_bang model ~to_draw:view ~on_tick:update ~stop_when:finished ~to_draw_last:lastView =
+  let rec loop model =
+    let image = view model in
+    let _ = display image                         (* Renders the image on the display *)
+    in
+    match finished model with
+    | true  -> display (lastView model)
+    | false -> loop (update model)
   in
-  match finished model with
-  | true  -> display (viewLast model)
-  | false -> big_bang (update model)
+  loop model
 ```
 
 ### Heads Up!
