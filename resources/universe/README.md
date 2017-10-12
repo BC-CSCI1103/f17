@@ -4,15 +4,34 @@
 
 ------
 
-## Notes on the Universe Graphics & Animation Library (DRAFT)
+## Notes on the Universe Graphics & Animation Library
 
 ### Getting Started
 
 OCaml's Standard Library is excellent but quite small as libraries go. So in CSCI 1103, we'll be using a non-standard library supporting simple graphics and animation. The library, called [Universe](http://www.is.ocha.ac.jp/~asai/Universe/en/), was developed by Kenichi Asai and Chihiro Uehara. It is based on a similar library developed earlier for the programming language Racket. 
 
-This document gives a very brief overview of how the Universe library works. The library contains 3 main parts (modules): 1. World, 2. Image and 3. Color. In the present draft we're going to omit discussion of the World module and its `World.big_bang` function. We'll flesh that out in a subsequent draft.
+This document gives a very brief overview of how the Universe library works. The library contains 3 main parts (modules): 1. World, 2. Image and 3. Color. 
 
-### Graphics
+### Color
+
+The Universe library contains a [Color](http://www.is.ocha.ac.jp/~asai/Universe/en/Color.html) module with a large number of pre-defined colors. Colors are combinations of varying levels of *red*, *greeen* and *blue*. In addition, a color may have an alpha value which determines the transparency of a color. An alpha value of 255 is completely opaque. An alpha value of 0 is completely transparent.
+
+The Color module contains one function for making colors and two functions for taking them apart:
+
+```ocaml
+make_color : ?alpha:int -> int -> int -> int -> t
+The call (make_color r g b ~alpha:a) creates a color from RGB and optional alpha (default: 255)
+
+to_rgba : t -> int * int * int * int
+The call (to_rgba color) extracts RGBA from a color
+
+to_rgb : t -> int * int * int
+The call (to_rgb color) extracts RGB from a color ignoring alpha
+```
+
+The integer values specifying the red, green, blue and alpha range between 0 and 255. When all of red, green and blue are 0, the color is black. When they're all 255 the color is white. And more generally, any color with equal levels of red, green and blue provides a shade of gray.
+
+### Images and the Graphics Display
 
  In this section we'll focus on graphical images. The graphics system used in the library is based on a 2D plane with x-coordinates running from left to right and y-coordinates running from top to bottom. So (0., 0.) is the point at the upper left and (width, height) is the point at the lower right. 
 
@@ -89,9 +108,9 @@ let square = Image.rectangle radius radius seeThroughLimeGreen
 let image = Image.place_image square (radius, radius) circle
 ```
 
-### Animation
+### Animation and the World Module
 
-The World module in the Universe library allows one to code interactive graphical applications in OCaml using a variation of the modern [model-view-update](https://guide.elm-lang.org/architecture/) software architecture (aka the [Elm](http://elm-lang.org/) software architecture). The basic idea is that the state of a graphical application is represented or modeled using a single value — in this architecture the value is called a *model*. For a non-trivial application the model will usually be a record structure with many parts. The model-view-update architecture is implemented in a cycle with the model being passed to a *view* function which produces a graphical representation of the model for the user to see. When events such as *clock-ticks*, *touchpad actions* or *keystrokes* occur, the model is threaded through an *update* function which produces a new model reflecting the changed state of the app.
+The [World](http://www.is.ocha.ac.jp/~asai/Universe/en/World.html) module in the Universe library allows one to code interactive graphical applications in OCaml using a variation of the modern [model-view-update](https://guide.elm-lang.org/architecture/) software architecture (aka the [Elm](http://elm-lang.org/) software architecture). The basic idea is that the state of a graphical application is represented or modeled using a single value — in this architecture the value is called a *model*. For a non-trivial application the model will usually be a record structure with many parts. The model-view-update architecture is implemented in a cycle with the model being passed to a *view* function which produces a graphical representation of the model for the user to see. When events such as *clock-ticks*, *touchpad actions* or *keystrokes* occur, the model is threaded through an *update* function which produces a new model reflecting the changed state of the app.
 
 ```
                                       +------------+
@@ -152,14 +171,26 @@ The `World.big_bang` function has one required input and several optional inputs
 - The `stop_when` function `finished : model -> bool` is applied to the model. If it returns `true` the `big_bang` function will call the `to_draw_last : model -> Image.t` function and terminate the loop.
 - The `to_draw_last` function operates like `to_draw` but it allows for a final image that is different than the images displayed in the `big_bang` loop.
 
+It isn't exactly accurate, but the `World.big_bang` function can be understood roughly as:
+
+```ocaml
+let rec big_bang model ~to_draw:view ~on_tick:update ~stop_when:finished ~to_draw_last:viewLast =
+  let image = view model in
+  let _ = display image      (* Renders the image on the display *)
+  in
+  match finished model with
+  | true  -> display (viewLast model)
+  | false -> big_bang (update model)
+```
+
 ### Heads Up!
 
 Conceptually, the various `update` functions map models to models. However, due to the inclusion of additional features in the Universe library, the models returned by the various update functions must be wrapped with the `World` constructor from the `World` module. (Confusing, I know.) Here is an example:
 
 ```ocaml
-type model = { x : double }
+type model = { x : float }
 
 let update model = World.World { x = 3.14 }
 ```
 
-The `World.World` constructor packages up the model in a variant type that is required in the plumbing of the `World.big_bang` function.
+The `World.World` constructor packages up the model in a variant type that is required to make the plumbing of the `World.big_bang` function well-typed.
