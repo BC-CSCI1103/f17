@@ -91,4 +91,75 @@ let image = Image.place_image square (radius, radius) circle
 
 ### Animation
 
-LATER
+The World module in the Universe library allows one to code interactive graphical applications in OCaml using a variation of the modern [model-view-update](https://guide.elm-lang.org/architecture/) software architecture (aka the [Elm](http://elm-lang.org/) software architecture). The basic idea is that the state of a graphical application is represented or modeled using a single value — in this architecture the value is called a *model*. For a non-trivial application the model will usually be a record structure with many parts. The model-view-update architecture is implemented in a cycle with the model being passed to a *view* function which produces a graphical representation of the model for the user to see. When events such as *clock-ticks*, *touchpad actions* or *keystrokes* occur, the model is threaded through an *update* function which produces a new model reflecting the changed state of the app.
+
+```
+                                      +------------+
+                  +-------------------+    view    |<-------------------+
+                  |                   +------------+                    |
+                  v                                                     |
+          +----------------+                                   +--------+-------+
+          |     events     |                                   |      model     |
+          +-------+--------+                                   +----------------+
+                  |                                                     ^
+                  |                   +------------+                    |
+                  +------------------>|   update   +--------------------+
+                                      +------------+
+```
+
+In the general Elm architecture, all of the different types of events are threaded through a single update function.
+
+```ocaml
+update : Msg Model -> Model
+```
+
+And the `update` function uses the `Msg` to sort out which kind of event occurred and how to map the input model to the output model. 
+
+In the Universe library, the `World.big_bang` function handles the three types of events mentioned above (i.e., clock ticks, touchpad actions and key-strokes) separately. A typical application might look like this:
+
+```ocaml
+World.big_bang intialModel
+  ~name: "My App"
+  ~width: 500
+  ~height: 500
+  ~to_draw: view
+  ~rate: 0.02
+  ~on_tick: clockUpdate
+  ~on_mouse: mouseUpdate                 (* ('a -> float -> float -> string -> ('a, 'c) t) *)
+  ~on_key_press: keyPressUpdate          (* ('a -> string -> ('a, 'd) t) *)
+  ~on_key_release: keyReleaseUpdate      (* ('a -> string -> ('a, 'd) t) *)
+  ~stop_when: finished
+  ~to_draw_last: view
+```
+
+Let us assume that the coder has defined a suitable `model` type:
+
+```ocaml
+type model = ...
+```
+
+The `World.big_bang` function has one required input and several optional inputs. It operates in a loop:
+
+- The `intialModel` is the starter value of type `model`. This value is threaded through the `big_bang` loop;
+- The `to_draw` function `view : model -> Image.t` is called each time through the loop, it produces an image that the `big_bang` function displays;
+- The `rate` is the clock rate, here set to `0.02` two one-hundredths of a second;
+- The `on_tick` function `clockUpdate : model -> model` is the update function specifically for clock-tick events, it is called each time through the `big_bang`'s loop; SEE BELOW ABOUT ITS RETURN VALUE!
+- The touchpad/mouse function `mouseUpdate : model -> x -> y -> event -> model` is called whenever an event occurs on the touchpad/mouse. The `mouseUpdate` function accepts a model, the (x, y) coordinates of the touchpad/mouse event and a string representing the kind of event. From these inputs it produces a new model. There are only two touchpad/mouse events:
+  - "button_down"
+  - "button_up"
+- There are two key management functions: `on_key_press` and `on_key_release`. These work analogously so we'll just describe `on_key_press`, the function `keyPressUpdate : model -> event -> model` accepts a model and a key name in the form of a string. It produces a new model. For a given key, the string name is a string representing the symbol on the key — "a" or "A". The arrow keys are named as one would expect:
+  - "left", "right", "up" and "down"
+- The `stop_when` function `finished : model -> bool` is applied to the model. If it returns `true` the `big_bang` function will call the `to_draw_last : model -> Image.t` function and terminate the loop.
+- The `to_draw_last` function operates like `to_draw` but it allows for a final image that is different than the images displayed in the `big_bang` loop.
+
+### Heads Up!
+
+Conceptually, the various `update` functions map models to models. However, due to the inclusion of additional features in the Universe library, the models returned by the various update functions must be wrapped with the `World` constructor from the `World` module. (Confusing, I know.) Here is an example:
+
+```ocaml
+type model = { x : double }
+
+let update model = World.World { x = 3.14 }
+```
+
+The `World.World` constructor packages up the model in a variant type that is required in the plumbing of the `World.big_bang` function.
