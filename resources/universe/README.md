@@ -141,7 +141,7 @@ And the `update` function uses the `Msg` to sort out which kind of event occurre
 In the Universe library, the `World.big_bang` function handles the three types of events mentioned above (i.e., clock ticks, touchpad actions and key-strokes) separately. A typical application might look like this:
 
 ```ocaml
-World.big_bang intialModel
+World.big_bang initialModel
   ~name: "My App"
   ~width: 500
   ~height: 500
@@ -163,7 +163,7 @@ type model = ...
 
 The `World.big_bang` function has one required input and several optional inputs. It operates in a loop:
 
-- The `intialModel` is the starter value of type `model`. This value is threaded through the `big_bang` loop;
+- The `initialModel` is the starter value of type `model`. This value is threaded through the `big_bang` loop;
 - The `to_draw` function `view : model -> Image.t` is called each time through the loop, it produces an image that the `big_bang` function displays;
 - The `rate` is the clock rate, here set to `0.02` two one-hundredths of a second;
 - The `on_tick` function `clockUpdate : model -> model` is the update function specifically for clock-tick events, it is called each time through the `big_bang`'s loop; SEE BELOW ABOUT ITS RETURN VALUE!
