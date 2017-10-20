@@ -45,7 +45,7 @@
 |  11  |  T   | 10/3  | More on sorting: quicksort, mergesort    | [100317](https://github.com/BC-CSCI1103/100317) |
 |  12  |  R   | 10/5  | Animation: model-view-update architecture; Functions are values: map; filter and fold | [100517](https://github.com/BC-CSCI1103/100517) |
 |  13  |  T   | 10/10 | More on function values: function slope, Riemann sums; Dictionaries: assocation lists | [101017]()                               |
-|  14  |  R   | 10/12 | More on Dictionaries: Binary Search Trees; The Best Candidate Algorithm | [101217]()                               |
+|  14  |  R   | 10/12 | More on Dictionaries: Binary Search Trees; The Best Candidate Algorithm | [101217](https://github.com/BC-CSCI1103/101217) |
 |  15  |  T   | 10/17 | Numeral systems; binary & hex; conversion | [101717]()                               |
 |  16  |  R   | 10/19 | Positional addition; logic gates; ripple carry | [101917]()                               |
 |  17  |  T   | 10/24 | Machines & storage architecture, bytes & words; A Simple Virtual Machine (SVM) |                                          |
