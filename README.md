@@ -17,7 +17,7 @@
   + **Office Hours** Fulton 160 Mon 7PM - 9PM, Fri 3PM - 5PM.
 + Yueming Chen
   + **Section**: Higgins 280 Wed 6PM.
-  + **Office Hours** Fulton 160 Sun 5PM - 7PM, Thu 1PM - 3PM.
+  + **Office Hours** Fulton 160 Tue 6PM - 8PM, Thu 1PM - 3PM.
 
 
 ---
