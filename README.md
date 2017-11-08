@@ -46,9 +46,9 @@
 |  12  |  R   | 10/5  | Animation: model-view-update architecture; Functions are values: map; filter and fold      | [100517](https://github.com/BC-CSCI1103/100517) |
 |  13  |  T   | 10/10 | More on function values: function slope, Riemann sums; Dictionaries: assocation lists      | [101017](https://github.com/BC-CSCI1103/101017) |
 |  14  |  R   | 10/12 | More on Dictionaries: Binary Search Trees; The Best Candidate Algorithm                    | [101217](https://github.com/BC-CSCI1103/101217) |
-|  15  |  T   | 10/17 | Numeral systems; binary & hex; conversion                                                  | [101717](https://github.com/BC-CSCI1103/101717) |
-|  16  |  R   | 10/19 | Positional addition; logic gates; a ripple carry adder                                     | [101917](https://github.com/BC-CSCI1103/101917) |
-|  17  |  T   | 10/24 | Machines & storage architecture, bytes & words; A Simple Virtual Machine (SVM)             | [102417](https://github.com/BC-CSCI1103/102417) |
+|  15  |  T   | 10/17 | Symbols and Digital Representations; Positional Numeral Systems                            | [101717](https://github.com/BC-CSCI1103/101717) |
+|  16  |  R   | 10/19 | Binary & Hexadecimal; logic gates; a ripple carry adder                                    | [101917](https://github.com/BC-CSCI1103/101917) |
+|  17  |  T   | 10/24 | Machines & Storage Architecture, bytes & words; A Simple Virtual Machine (SVM)             | [102417](https://github.com/BC-CSCI1103/102417) |
 |  18  |  R   | 10/26 | SVM                                                                                        | [102617](https://github.com/BC-CSCI1103/102617) |
 |  19  |  T   | 10/31 | Storage diagrams & the storage model of evaluation                                         | [103117](https://github.com/BC-CSCI1103/103117) |
 |  20  |  R   | 11/2  | Imperative coding in OCaml: mutable references; arrays for-loops & while-loops             | [110217](https://github.com/BC-CSCI1103/110217) |
