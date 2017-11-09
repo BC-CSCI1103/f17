@@ -47,11 +47,11 @@
 |  13  |  T   | 10/10 | More on function values: function slope, Riemann sums; Dictionaries: assocation lists      | [101017](https://github.com/BC-CSCI1103/101017) |
 |  14  |  R   | 10/12 | More on Dictionaries: Binary Search Trees; The Best Candidate Algorithm                    | [101217](https://github.com/BC-CSCI1103/101217) |
 |  15  |  T   | 10/17 | Symbols and Digital Representations; Positional Numeral Systems                            | [101717](https://github.com/BC-CSCI1103/101717) |
-|  16  |  R   | 10/19 | Binary & Hexadecimal; logic gates; a ripple carry adder                                    | [101917](https://github.com/BC-CSCI1103/101917) |
-|  17  |  T   | 10/24 | Machines & Storage Architecture, bytes & words; A Simple Virtual Machine (SVM)             | [102417](https://github.com/BC-CSCI1103/102417) |
-|  18  |  R   | 10/26 | SVM                                                                                        | [102617](https://github.com/BC-CSCI1103/102617) |
+|  16  |  R   | 10/19 | Binary -- logic gates; a ripple-carry adder; Hexadecimal                                   | [101917](https://github.com/BC-CSCI1103/101917) |
+|  17  |  T   | 10/24 | Machines & Storage Architecture, Bytes & Words                                             | [102417](https://github.com/BC-CSCI1103/102417) |
+|  18  |  R   | 10/26 | SVM -- A Simple Virtual Machine                                                            | [102617](https://github.com/BC-CSCI1103/102617) |
 |  19  |  T   | 10/31 | Storage diagrams & the storage model of evaluation                                         | [103117](https://github.com/BC-CSCI1103/103117) |
-|  20  |  R   | 11/2  | Imperative coding in OCaml: mutable references; arrays for-loops & while-loops             | [110217](https://github.com/BC-CSCI1103/110217) |
+|  20  |  R   | 11/2  | Imperative coding in OCaml: mutable references; arrays; for-loops & while-loops            | [110217](https://github.com/BC-CSCI1103/110217) |
 |  21  |  T   | 11/7  | Imperative coding: for-loops & arrays                                                      | [110717](https://github.com/BC-CSCI1103/110717) |
 |  22  |  R   | 11/9  | **Second Exam**; Working with Arrays                                                       |                                                 |
 |  23  |  T   | 11/14 | Search problems; mazes, 8 queens                                                           |                                                 |
