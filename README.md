@@ -53,7 +53,7 @@
 |  19  |  T   | 10/31 | Storage diagrams & the storage model of evaluation                                         | [103117](https://github.com/BC-CSCI1103/103117) |
 |  20  |  R   | 11/2  | Imperative coding in OCaml: mutable references; arrays; for-loops & while-loops            | [110217](https://github.com/BC-CSCI1103/110217) |
 |  21  |  T   | 11/7  | Imperative coding: for-loops & arrays                                                      | [110717](https://github.com/BC-CSCI1103/110717) |
-|  22  |  R   | 11/9  | **Second Exam**; Working with Arrays                                                       |                                                 |
+|  22  |  R   | 11/9  | **Second Exam**                                                                            | [110917](https://github.com/BC-CSCI1103/110917) |
 |  23  |  T   | 11/14 | Search problems; mazes, 8 queens                                                           |                                                 |
 |  24  |  R   | 11/16 | Working with strings & text files                                                          |                                                 |
 |  25  |  T   | 11/21 | Working with text files                                                                    |                                                 |
