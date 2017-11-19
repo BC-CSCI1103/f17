@@ -22,7 +22,7 @@
 
 ---
 
-[About](resources/about.md) : [Textbooks](resources/textbooks.md) : [Grading](resources/grading.md) : [Canvas](https://bostoncollege.instructure.com/courses/1579254/gradebook)  : [Piazza](https://piazza.com/class/j6pep61xju0m5) : [Labs](resources/labs.md) 
+[About](resources/about.md) : [Textbooks](resources/textbooks.md) : [Grading](resources/grading.md) : [Canvas](https://bostoncollege.instructure.com/courses/1579254/gradebook)  : [Piazza](https://piazza.com/class/j6pep61xju0m5) : [Labs](resources/labs.md)
 
 [Manual](http://caml.inria.fr/pub/docs/manual-ocaml/index.html) : [Stdlib](http://caml.inria.fr/pub/docs/manual-ocaml/stdlib.html) : [Pervasives](http://caml.inria.fr/pub/docs/manual-ocaml/libref/Pervasives.html) : [Universe](http://www.is.ocha.ac.jp/~asai/Universe/en/) : [Universe Notes](./resources/universe/README.md) : [OCaml.org](https://ocaml.org/)
 
@@ -32,7 +32,7 @@
 
 | Mtng |      | Date  | Topic                                    | Materials                                |
 | :--: | :--: | :---: | :--------------------------------------- | :--------------------------------------- |
-|  1   |  T   | 8/29  | Introduction and Overview                | 082917.md                                |
+|  1   |  T   | 8/29  | Introduction and Overview                | [082917](https://github.com/BC-CSCI1103/082917)                                |
 |  2   |  R   | 8/31  | Base types & basic expressions, simplification | [083117.md](./notes/083117.md)           |
 |  3   |  T   |  9/5  | More base types, libraries, stdlib, pervasives, names, top-level let, function definitions | [090517]()                               |
 |  4   |  R   |  9/7  | More on names & function definitions, implicit vs explicit types, let-in, tuples | [090717.ml](./code/090717.ml)            |
@@ -62,5 +62,3 @@
 |  27  |  R   | 11/30 | New types: module types & modules        |                                          |
 |  28  |  T   | 12/5  | New Types in Java                        |                                          |
 |  29  |  R   | 12/7  | **Last Meeting** Review and wrap-up      |                                          |
-
-
