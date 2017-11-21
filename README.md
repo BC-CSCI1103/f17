@@ -32,9 +32,9 @@
 
 | Mtng |      | Date  | Topic                                    | Materials                                |
 | :--: | :--: | :---: | :--------------------------------------- | :--------------------------------------- |
-|  1   |  T   | 8/29  | Introduction and Overview                | [082917](https://github.com/BC-CSCI1103/082917)                                |
-|  2   |  R   | 8/31  | Base types & basic expressions, simplification | [083117.md](./notes/083117.md)           |
-|  3   |  T   |  9/5  | More base types, libraries, stdlib, pervasives, names, top-level let, function definitions | [090517]()                               |
+|  1   |  T   | 8/29  | Introduction and Overview                | [082917](https://github.com/BC-CSCI1103/082917) |
+|  2   |  R   | 8/31  | Base types & basic expressions, simplification | [083117](https://github.com/BC-CSCI1103/083117) |
+|  3   |  T   |  9/5  | More base types, libraries, stdlib, pervasives, names, top-level let, function definitions | [090517](https://github.com/BC-CSCI1103/090517) |
 |  4   |  R   |  9/7  | More on names & function definitions, implicit vs explicit types, let-in, tuples | [090717.ml](./code/090717.ml)            |
 |  5   |  T   | 9/12  | Sums & matching, records                 | [091217](https://github.com/BC-CSCI1103/091217) |
 |  6   |  R   | 9/14  | Repetition: work, working with lists     | [091417](https://github.com/BC-CSCI1103/091417) |
