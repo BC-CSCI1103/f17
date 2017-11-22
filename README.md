@@ -33,17 +33,17 @@
 | Mtng |      | Date  | Topic                                    | Materials                                |
 | :--: | :--: | :---: | :--------------------------------------- | :--------------------------------------- |
 |  1   |  T   | 8/29  | Introduction and Overview                | [082917](https://github.com/BC-CSCI1103/082917) |
-|  2   |  R   | 8/31  | Base types & basic expressions, simplification | [083117](https://github.com/BC-CSCI1103/083117) |
-|  3   |  T   |  9/5  | More base types, libraries, stdlib, pervasives, names, top-level let, function definitions | [090517](https://github.com/BC-CSCI1103/090517) |
-|  4   |  R   |  9/7  | More on names & function definitions, implicit vs explicit types, let-in, tuples | [090717.ml](./code/090717.ml)            |
-|  5   |  T   | 9/12  | Sums & matching, records                 | [091217](https://github.com/BC-CSCI1103/091217) |
-|  6   |  R   | 9/14  | Repetition: work, working with lists     | [091417](https://github.com/BC-CSCI1103/091417) |
-|  7   |  T   | 9/19  | Repetition: more work with lists         | [091917](https://github.com/BC-CSCI1103/091917) |
-|  8   |  R   | 9/21  | Repetition: more on repetition           | [092117](https://github.com/BC-CSCI1103/092117) |
+|  2   |  R   | 8/31  | Base types; literals & expressions; simplification & work; values; libraries | [083117](https://github.com/BC-CSCI1103/083117) |
+|  3   |  T   |  9/5  | Names: `let` and `let-in`; function definitions and calls; replacement; implicit vs explicit types | [090517](https://github.com/BC-CSCI1103/090517) |
+|  4   |  R   |  9/7  | More on function definitions; the graphics library | [090717](https://github.com/BC-CSCI1103/090717) |
+|  5   |  T   | 9/12  | Tuples & pattern matching; record & sum types; branching; lists | [091217](https://github.com/BC-CSCI1103/091217) |
+|  6   |  R   | 9/14  | Repetition: recursive list processing    | [091417](https://github.com/BC-CSCI1103/091417) |
+|  7   |  T   | 9/19  | Working with lists; computational shapes; working with numbers, primality | [091917](https://github.com/BC-CSCI1103/091917) |
+|  8   |  R   | 9/21  | Working with repetitive images           | [092117](https://github.com/BC-CSCI1103/092117) |
 |  9   |  T   | 9/26  | Repetition: images, primality            | [092617](https://github.com/BC-CSCI1103/092617) |
 |  10  |  R   | 9/28  | **First Exam**; Sorting: insertion sort  | [092817](https://github.com/BC-CSCI1103/092817) |
 |  11  |  T   | 10/3  | More on sorting: quicksort, mergesort    | [100317](https://github.com/BC-CSCI1103/100317) |
-|  12  |  R   | 10/5  | Animation: model-view-update architecture; Functions are values: map; filter and fold | [100517](https://github.com/BC-CSCI1103/100517) |
+|  12  |  R   | 10/5  | Animation: the model-view-update architecture; Functions are values: map; filter and fold | [100517](https://github.com/BC-CSCI1103/100517) |
 |  13  |  T   | 10/10 | More on function values: function slope, Riemann sums; Dictionaries: assocation lists | [101017](https://github.com/BC-CSCI1103/101017) |
 |  14  |  R   | 10/12 | More on Dictionaries: Binary Search Trees; The Best Candidate Algorithm | [101217](https://github.com/BC-CSCI1103/101217) |
 |  15  |  T   | 10/17 | Symbols and Digital Representations; Positional Numeral Systems | [101717](https://github.com/BC-CSCI1103/101717) |
