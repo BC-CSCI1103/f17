@@ -58,7 +58,7 @@
 |      |  24  | More on digital audio                    | [R 11/16/17](https://github.com/BC-CSCI1103/111617) |
 |  13  |  25  | Digital images; Search problems; mazes, Eight Queens |                                          |
 |      |      | **Thanksgiving** — no class              |                                          |
-|  14  |  26  | Working with strings & text files        |                                          |
+|  14  |  26  | Working with strings & text files      | [T 11/28/17](https://github.com/BC-CSCI1103/112817)                                          |
 |      |  27  | Working with strings and text files; applications in bioinformatics |                                          |
 |  15  |  28  | Type abstraction: making new types in OCaml and Java |                                          |
 |      |  29  | **Last Meeting** Review and wrap-up      |                                          |
